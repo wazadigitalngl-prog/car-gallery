@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Toyota Showcase</title>
+
+<style>
+body{
+    margin:0;
+    background:white;
+    font-family:Arial,sans-serif;
+}
+
+.car{
+    margin-bottom:50px;
+}
+
+.car img{
+    width:100%;
+    display:block;
+    cursor:pointer;
+}
+
+.info{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.5s ease;
+    background:white;
+    padding:0 25px;
+}
+
+.car.active .info{
+    max-height:300px;
+    padding:25px;
+}
+
+h2{
+    margin-top:0;
+}
+
+ul{
+    padding-left:20px;
+}
+</style>
+</head>
+<body>
+
+<div class="car">
+    <img src="urban_cruiser_hyryder_g_at_2wd_neodrive_p_midnight_black_base.webp">
+    <div class="info">
+        <h2>Urban Cruiser Hyryder</h2>
+        <ul>
+            <li>1.5L Hybrid Engine</li>
+            <li>Up to 27.97 km/l</li>
+            <li>Panoramic Sunroof</li>
+            <li>360° Camera</li>
+        </ul>
+    </div>
+</div>
+
+<div class="car">
+    <img src="toyota_innova_hycross_super_white.webp">
+    <div class="info">
+        <h2>Innova HyCross</h2>
+        <ul>
+            <li>2.0L Hybrid Engine</li>
+            <li>Ottoman Seats</li>
+            <li>ADAS Features</li>
+            <li>Up to 23.24 km/l</li>
+        </ul>
+    </div>
+</div>
+
+<div class="car">
+    <img src="front-left-side-47.avif">
+    <div class="info">
+        <h2>Fortuner</h2>
+        <ul>
+            <li>2.8L Diesel</li>
+            <li>4×4 Capability</li>
+            <li>500 Nm Torque</li>
+            <li>Premium Leather Interior</li>
+        </ul>
+    </div>
+</div>
+
+<div class="car">
+    <img src="toyota_taisor_enticing_silver_with_midnight_black.webp">
+    <div class="info">
+        <h2>Taisor</h2>
+        <ul>
+            <li>Turbo Petrol</li>
+            <li>9-inch Touchscreen</li>
+            <li>Wireless Apple CarPlay</li>
+            <li>360° Camera</li>
+        </ul>
+    </div>
+</div>
+
+<div class="car">
+    <img src="20190607105010_Toyota-Glanza-white-studio.avif">
+    <div class="info">
+        <h2>Glanza</h2>
+        <ul>
+            <li>1.2L Petrol</li>
+            <li>Up to 22.94 km/l</li>
+            <li>Head-Up Display</li>
+            <li>360° Camera</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+document.querySelectorAll(".car").forEach(car=>{
+    car.addEventListener("click",()=>{
+        car.classList.toggle("active");
+    });
+});
+</script>
+
+</body>
+</html>
