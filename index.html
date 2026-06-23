@@ -7,7 +7,8 @@
 <style>
 body{
     margin:0;
-    background:white;
+    background:black;
+    color:white;
     font-family:Arial,sans-serif;
 }
 
@@ -19,16 +20,23 @@ body{
     width:100%;
     display:block;
     cursor:pointer;
+    border-radius:20px;
+    transition:transform .4s ease;
+}
+
+.car img:hover{
+    transform:scale(1.02);
 }
 
 .info{
     max-height:0;
     overflow:hidden;
     transition:max-height 0.5s ease;
-    background:white;
+    background:black;
+    color:white;
     padding:0 25px;
 }
-
+    
 .car.active .info{
     max-height:300px;
     padding:25px;
